@@ -1,7 +1,10 @@
 package com.ws.model;
 
-import com.ws.IPersona;
+import com.ws.service.IPersona;
 
+//Clase Padre
+//Las Interfaces se implementan
+//Las Clases se extientien
 public class Persona implements IPersona {
 
     public String nombre;

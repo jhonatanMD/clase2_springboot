@@ -1,5 +1,6 @@
 package com.ws.model;
 
+//Las clases se extienden
 public class Alumno extends Persona {
 
     //nombre

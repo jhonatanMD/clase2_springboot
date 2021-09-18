@@ -7,6 +7,13 @@ public class Maestro extends Persona{
     //edad
 
 
+
+
+    @Override
+    public String nombre() {
+        return this.nombre;
+    }
+
     @Override
     public String toString() {
         return "Maestro{" +

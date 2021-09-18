@@ -1,6 +1,7 @@
 package com.ws;
 
 import com.ws.model.Alumno;
+import com.ws.model.Calculador;
 import com.ws.model.Maestro;
 import com.ws.model.Persona;
 
@@ -20,24 +21,26 @@ public class Main {
         Maestro maestro = new Maestro();
 
 
+        alumno.nombre = "Raul";
+        alumno.apellido = "Ruiz";
+        alumno.edad = 20;
 
-        //Alumno
-        alumno.nombre = "Juan";
-        alumno.apellido = "Mallqui Diaz";
-        alumno.edad = 22;
+        System.out.println(alumno);
 
+        System.out.println("Nombre : "+alumno.nombre());
 
-        //Maestro
         maestro.nombre = "Luis";
-        maestro.apellido = "Ramirez";
-        maestro.edad = 20;
+        maestro.apellido="Suarez";
+        maestro.edad = 40;
 
-
-        //sout
-        //if(alumno.nombre != null) {
-            System.out.println(alumno.nombre+" "+alumno.apellido);
-        //}
         System.out.println(maestro);
+
+        System.out.println("Nombre : "+maestro.nombre());
+
+
+        Calculador calculador = new Calculador();
+
+
 
 
         /* CONDICIONALES */
@@ -100,13 +103,23 @@ public class Main {
 
 
         //array.length longitud o tamaño del array
-        for (int i  = 1 ; i < array.length  ; i++){
+        /*for (int i  = 1 ; i < array.length  ; i++){
 
 
             array[i] = i+"";//String.valueOf(i);
             System.out.println(array[i]);
 
-        }
+        }*/
+
+
+/*
+        System.out.println("----------------------------------------------------------");
+
+        maestro.setNombre("Robert");
+        System.out.println();
+
+        alumno.setNombre("Robert"); // alumno.nombre = "Robert"
+        System.out.println(alumno.getNombre());
 
         System.out.println(array[5]);
 
@@ -126,17 +139,7 @@ public class Main {
         persona.setNombre("Mark");
         System.out.println("----------------------------------------------------------");
         System.out.println(persona.nombre());
-
-
-
-        System.out.println("----------------------------------------------------------");
-
-        maestro.setNombre("Robert");
-        System.out.println();
-
-        alumno.setNombre("Robert"); // alumno.nombre = "Robert"
-        System.out.println(alumno.getNombre());
-
+*/
 
         // Crear una interface donde existan estos metodos suma y resta
         // implementarla en una clase Calculo
